@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+USE_TZ = False  # 타임존 비활성화
+TIME_ZONE = 'Asia/Seoul'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -36,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'board',
+    'comment',
 ]
 
 MIDDLEWARE = [
@@ -102,7 +107,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
